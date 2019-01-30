@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" media="(min-width:768px) and (max-width:1250px)" href="table.css">
+    <link rel="stylesheet" type="text/css" media="(max-width:767px)" href="mobil.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>JScript Start</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">        
+        </div>
+        <div class="nav">        
+        </div>
+        <div class="out1"></div>
+        <div class="out2"></div>
+        <div class="side"  ng-app="myApp" ng-init="names=['Punkt1', 'Punkt2', 'Punkt3', 'Punkt4']; 
+                                                   names2=['Punkt5', 'Punkt6', 'Punkt7', 'Punkt8'];
+                                                   names3=['Punkt9', 'Punkt10', 'Punkt11', 'Punkt12']" ng-controller="coNtrol">
+            <div class="side_sub">
+                {{menu + " " + menu_punkt1}}
+                <ul> 
+                    <li  ng-repeat="x in names">
+                        {{x}}
+                    </li>
+                </ul>
+            </div>
+            <div class="side_sub">
+                {{menu + " " + menu_punkt2}}
+                <ul> 
+                    <li  ng-repeat="y in names2">
+                        {{y}}
+                    </li>
+                </ul>    
+            </div>
+            <div class="side_sub">
+                {{menu + " " + menu_punkt3}}
+                <ul> 
+                    <li  ng-repeat="z in names3">
+                        {{z}}
+                    </li>
+                </ul> 
+            </div>
+        </div>
+        <div class="article">
+        </div>
+        <div class="blok">
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+
+
+<script src="JavaScript.js"></script>
+</body>

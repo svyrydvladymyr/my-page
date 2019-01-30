@@ -1,0 +1,93 @@
+:root{
+    --bg-color:#F1F1F1;
+    --bg-color-content:#ffffff;
+    --border-color-content:1px solid #ffffff;
+    --border-color-content-hover:1px solid #72c0f3;
+    --box-shadow-content:0px 0px 8px #6eb4ff;
+    --box-shadow-content-hover:0px 0px 11px #6eb4ff;
+    --border-radius-main:9px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+    background: var(--bg-color);
+}
+
+.wrap{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto 300px 450px 450px auto;
+    grid-template-rows: 70px 120px auto 150px 50px;   
+    grid-gap: 1px; 
+    grid-template-areas: 'out1 header header header out2'
+                         'out1 side nav nav out2'
+                         'out1 side article article out2'
+                         'blok blok blok blok blok'
+                         'footer footer footer footer footer';
+}
+
+.header{
+    grid-area: header;
+ }
+.nav{
+    grid-area: nav;
+}
+.out1{
+    grid-area: out1;
+    background: var(--bg-color);
+}
+.out2{
+    grid-area: out2;
+    background: var(--bg-color);
+}
+.side{
+    grid-area: side;
+    background: var(--bg-color);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+}
+.article{
+    grid-area: article;
+ }
+.blok{
+    margin-top: 10px;
+    grid-area: blok;
+    background: #aac2da;
+    box-shadow: var(--box-shadow-content);
+}
+.footer{
+    grid-area: footer;
+    background: #929292;
+    margin-top: -1px;
+}
+
+
+.side_sub{
+    padding: 10px;
+    margin: 10px;
+    border-radius:var(--border-radius-main);
+    border:var(--border-color-content);
+    box-shadow:var(--box-shadow-content) ;
+    background: var(--bg-color-content);
+}
+
+.header, .nav, .article{
+    padding: 10px;
+    margin: 10px;
+    border-radius:var(--border-radius-main);
+    border:var(--border-color-content);
+    box-shadow:var(--box-shadow-content) ;
+    background: var(--bg-color-content);
+}
+
+.header:hover, .nav:hover, .article:hover, .side_sub:hover{
+    border:var(--border-color-content-hover);
+    box-shadow:var(--box-shadow-content-hover) ;
+}

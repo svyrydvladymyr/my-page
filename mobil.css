@@ -1,0 +1,33 @@
+.wrap{
+    min-height: 100vh;
+    min-width: 200px;
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 70px auto 120px auto 150px 50px;   
+    grid-template-areas: 'header'
+                         'side'
+                         'nav'
+                         'article'
+                         'blok'
+                         'footer';
+}
+
+.out1{
+    display: none;
+}
+
+.out2{
+    display: none;
+}
+
+.side_sub{
+    margin: 5px;
+}
+
+.header, .nav, .article{
+    margin: 5px;
+}
+
+.blok{
+    margin-top: 10px;
+}

@@ -1,0 +1,24 @@
+.wrap{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns:300px auto auto;
+    grid-template-rows: 70px 120px auto 150px 50px;   
+    grid-gap: 1px; 
+    grid-template-areas: 'header header header'
+                         'side nav nav'
+                         'side article article'
+                         'blok blok blok'
+                         'footer footer footer';
+}
+
+.out2{
+    grid-area: out2;
+    background: #ffffff;
+    display: none;
+}
+
+.out1{
+    grid-area: out1;
+    background: #ffffff;
+    display: none;
+}
