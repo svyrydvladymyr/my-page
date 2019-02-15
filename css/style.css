@@ -52,7 +52,6 @@ body{
     background: var(--bg-color);
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     justify-content: start;
 }
 .article{
