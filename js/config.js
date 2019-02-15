@@ -9,12 +9,22 @@ var paramInfo = {
     },
     born: {
         bornclass: 'fas fa-calendar-alt',
-        date: '28 apri',
+        date: '28',
         month: 'april',
-        year: '2019',
+        year: '1988',
     },
-    email: 'svyrydvladymyr@gmail.com',
-    phone: '+38 (066) 096 14 62',
-    job: 'Programmer',
-    level: 'Beginner'
+    email: {
+        emailclass: 'fas fa-at',
+        emailname: 'svyrydvladymyr@gmail.com'
+    },
+    phone: {
+        phoneclass: 'fas fa-phone-volume',
+        massageclass: 'fas fa-comment',
+        phonename: '+38 (066) 096 14 62',
+    },
+    job: {
+        jobclass: 'fas fa-laptop',
+        jobname: 'Programmer',
+        joblevel: 'Beginner'
+    },
 };
