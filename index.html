@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" media="(min-width:768px) and (max-width:1250px)" href="table.css">
-    <link rel="stylesheet" type="text/css" media="(max-width:767px)" href="mobil.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <title>JScript Start</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" media="(min-width:768px) and (max-width:1250px)" href="./css/table.css">
+    <link rel="stylesheet" type="text/css" media="(max-width:767px)" href="./css/mobil.css">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">    
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <title>My-Page</title>
 </head>
 <body>
     <div class="wrap">
@@ -17,32 +18,45 @@
         </div>
         <div class="out1"></div>
         <div class="out2"></div>
-        <div class="side"  ng-app="myApp" ng-init="names=['Punkt1', 'Punkt3', 'Punkt4']; 
-                                                   names2=['Punkt5', 'Punkt6', 'Punkt7', 'Punkt22', 'Punkt8'];
-                                                   names3=['Punkt9', 'Punkt10']" ng-controller="coNtrol">
+        <div class="side">
             <div class="side_sub">
-                {{menu + " " + menu_punkt1}}
-                <ul> 
-                    <li  ng-repeat="x in names">
-                        {{x}}
-                    </li>
-                </ul>
+                <div class="ava">
+                <img src="./img/ava.jpg" alt="MY-FOTO">
+                </div>
+                <div class="info">
+                    <div class="info-name">
+                        <p>Svyryd</p>
+                        <p>Volodymyr</p>
+                    </div>
+                    <div class="info-name">
+                        <i class='far fa-address-card'></i>
+                        <p>Ukrain, Ivano-Frankivsk</p>
+                    </div>
+                    <div class="info-name">
+                        <i class='fas fa-calendar-alt''></i>
+                        <p>28 april 1988</p>
+                    </div>
+                    <div class="info-name">
+                        <i class='fas fa-at'></i>
+                        <p>svyrydvladymyr@gmail.com</p>
+                    </div>
+                    <div class="info-name">
+                        <i class='fas fa-phone-volume'></i>
+                        <p>+38 (066) 096 14 62</p>
+                    </div>
+                    <div class="info-name">
+                        <i class='fas fa-comment'></i>
+                        <p>+38 (066) 096 14 62</p>
+                    </div>
+                    <div class="info-name">
+                        <i class='fas fa-laptop'></i>
+                        <p>Programmer, Beginner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="side_sub">  
             </div>
             <div class="side_sub">
-                {{menu + " " + menu_punkt2}}
-                <ul> 
-                    <li  ng-repeat="y in names2">
-                        {{y}}
-                    </li>
-                </ul>    
-            </div>
-            <div class="side_sub">
-                {{menu + " " + menu_punkt3}}
-                <ul> 
-                    <li  ng-repeat="z in names3">
-                        {{z}}
-                    </li>
-                </ul> 
             </div>
         </div>
         <div class="article">
@@ -54,5 +68,6 @@
     </div>
 
 
-<script src="JavaScript.js"></script>
+<script src="./js/js-main.js"></script>
+<script src="./js/js-info.js"></script>
 </body>

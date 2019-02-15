@@ -1,0 +1,110 @@
+/* style ava*/
+.ava {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20%;
+    padding: 4px;
+    overflow: hidden;
+    background: #ccf9cf;
+    border: 1px solid #98b1ca;
+    box-shadow: 0px 0px 9px #565656;
+    transition: 0.5s;
+}
+
+.ava img {
+    width: 100%;
+    margin: 0px;
+    border-radius: 20%;
+    border: 5px solid #ffffff;
+}
+
+/* on hover ava */
+.ava:hover, img {
+    border-radius: 10%;
+    transition: 0.5s;
+}
+.ava:hover img {
+    border-radius: 10%;
+    transition: 0.9s;
+}
+
+/* block info mame*/
+.info {
+    width: 100%;
+    max-width: 280px;
+    padding: 0px;
+    margin: 0px auto;
+}
+
+.info-name {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: 10px;
+    width: 100%;
+    padding: 2px 5px;
+    border: 1px solid #d1d1d1;
+    border-radius: 7px;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px #9e8d8d;
+}
+
+.info-name:hover {
+    background: #ffffff;
+    box-shadow: 0px 0px 8px #9e8d8d;
+}
+
+/* create a pseudo class */
+.info-name:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:10px; 
+    margin-bottom:20px; 
+    width: 100%; 
+    padding: 0px;
+    border: 0px solid #d1d1d1;
+    border-radius: 0px;
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    text-shadow: 0px 0px 4px #111111;
+}
+
+.info-name:first-child p{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.info-name p {
+    margin: 5px;
+    font-size: auto;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.info-name i {
+    margin: 5px;
+    color:#ffffff;
+    font-weight:bold; 
+    text-shadow: 0px 0px 15px green;
+}
+
+.info-name:hover i {
+   text-shadow: 0px 0px 15px red;
+}
+
+@media screen and (max-width:300px){
+    .info-name {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .info-name i {
+        margin-left: 50%;
+        transform: translateX(-10%);
+    }
+    .info-name p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
