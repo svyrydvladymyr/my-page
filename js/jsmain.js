@@ -20,3 +20,15 @@ var createA = function(atr, val) {
     elem.value = val;
     return elem;
 };
+
+// function for get id node
+var getID = function(val) {
+    var getid = document.getElementById(val);
+    return getid;
+};
+
+// function for get class node
+var getCL = function(val) {
+    var getclass = document.getElementsByClassName(val);
+    return getclass;
+};
