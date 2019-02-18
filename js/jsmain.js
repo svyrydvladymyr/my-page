@@ -1,3 +1,15 @@
+// function for get id node
+var getID = function(val) {
+    var getid = document.getElementById(val);
+    return getid;
+};
+
+// function for get class node
+var getCL = function(val) {
+    var getclass = document.getElementsByClassName(val);
+    return getclass;
+};
+
 // function for adding node 
 var createN = function(noda, val) {
     var elem = document.createElement(noda);
@@ -21,14 +33,3 @@ var createA = function(atr, val) {
     return elem;
 };
 
-// function for get id node
-var getID = function(val) {
-    var getid = document.getElementById(val);
-    return getid;
-};
-
-// function for get class node
-var getCL = function(val) {
-    var getclass = document.getElementsByClassName(val);
-    return getclass;
-};
