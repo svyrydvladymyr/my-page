@@ -1,4 +1,6 @@
 (function() {
+    var paramInfo = getLanguage();
+    console.log(paramInfo);
     // make block with foto
         var param = getID('sideinfo');
         var imgdiv = createNA("div", "class", "ava");
