@@ -2,30 +2,28 @@
 .ava {
     cursor: pointer;
     width: 100%;
-    border-radius: 20%;
-    padding: 4px;
+    border-radius: 5% 25%;
+    padding: 8px;
     overflow: hidden;
-    background: #ccf9cf;
+    background: #ffffff;
     border: 1px solid #98b1ca;
-    box-shadow: 0px 0px 9px #565656;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .ava img {
     width: 100%;
     margin: 0px;
-    border-radius: 20%;
-    border: 5px solid #ffffff;
+    border-radius: 5% 25%;
 }
 
 /* on hover ava */
 .ava:hover, img {
-    border-radius: 10%;
-    transition: 0.5s;
+    border-radius: 5%;
+    transition: 1s;
 }
 .ava:hover img {
-    border-radius: 10%;
-    transition: 0.9s;
+    border-radius: 5%;
+    transition: 1s;
 }
 
 /* block info mame*/
@@ -47,12 +45,11 @@
     border: 1px solid #d1d1d1;
     border-radius: 7px;
     background: #ffffff;
-    box-shadow: 0px 0px 5px #9e8d8d;
 }
 
 .info-name:hover {
     background: #ffffff;
-    box-shadow: 0px 0px 8px #9e8d8d;
+    box-shadow: 0px 0px 5px #c9c9c9;
 }
 
 /* create a pseudo class */

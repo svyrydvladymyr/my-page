@@ -15,7 +15,7 @@
 })();
 
 // function for change background-color 
-var bgColor = function(col) {
+var setBgColor = function(col) {
     var bgCol = "";
     var bgColor = "";
         setCookie("bgcolor", col);
