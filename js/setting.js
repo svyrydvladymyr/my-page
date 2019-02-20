@@ -35,13 +35,11 @@ var changLang = function(val){
         ua.style.width = 82 + "%";
         setCookie("lang", "ua");
         getJson("./json/configUA.json");
-        info(data);
     } else if (val == "en"){
         ua.style.width = 14 + "%";
         en.style.width = 82 + "%";
         setCookie("lang", "en");
         getJson("./json/configEN.json");
-        info(data);
     } 
     return ua, en;   
 }; 
