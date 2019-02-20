@@ -1,3 +1,51 @@
+var openSetting = function(){
+    var openGASet = document.getElementById("set");
+    var openGASetting = document.getElementById("setting");
+    if (openGASet.className === "set"){
+        openGASet.className = "set_close";
+    } else {
+        openGASet.className = "set";
+    }
+    if (openGASetting.className === "setting"){
+        openGASetting.className = "setting_close";
+    } else {
+        openGASetting.className = "setting";
+    }
+};
+
+(function(){
+    var val = getCookie("lang");
+    var ua = document.getElementById("lang_ua");
+    var en = document.getElementById("lang_en");
+    if (val == "ua"){
+        en.style.width = 14 + "%";
+        ua.style.width = 82 + "%";
+    } else if (val == "en"){
+        ua.style.width = 14 + "%";
+        en.style.width = 82 + "%";
+    } 
+    return ua, en;   
+})(); 
+
+var changLang = function(val){
+    var ua = document.getElementById("lang_ua");
+    var en = document.getElementById("lang_en");
+    if (val == "ua"){
+        en.style.width = 14 + "%";
+        ua.style.width = 82 + "%";
+        setCookie("lang", "ua");
+        getJson("./json/configUA.json");
+        info(data);
+    } else if (val == "en"){
+        ua.style.width = 14 + "%";
+        en.style.width = 82 + "%";
+        setCookie("lang", "en");
+        getJson("./json/configEN.json");
+        info(data);
+    } 
+    return ua, en;   
+}; 
+
 // function for set background-color default
 (function(){
     //var x = 27 + "px";
@@ -22,6 +70,5 @@ var setBgColor = function(col) {
         bgCol = getCookie("bgcolor");
         bgColor = getTAG("body");
         bgColor[0].style.backgroundColor = bgCol;
-
 };
 

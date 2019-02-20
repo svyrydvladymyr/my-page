@@ -6,6 +6,7 @@ function getJson(namefile) {
             var data = JSON.parse(file.responseText);
             //console.log(data); 
             info(data);
+            return data;
         }
     };
     file.open("GET", namefile, true);
@@ -24,3 +25,15 @@ function getJson(namefile) {
         getJson("./json/configEN.json");
     }
 })();
+
+var setLang = function(){ 
+    var clang = getCookie("lang");
+    //console.log(clang);
+    if (clang == "en"){
+        getJson("./json/configEN.json");
+    } else if (clang == "ua"){
+        getJson("./json/configUA.json");
+    } else {
+        getJson("./json/configEN.json");
+    }
+};

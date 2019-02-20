@@ -1,5 +1,7 @@
 @import url("css-info.css");
+@import url("setting.css");
 
+/* my varriables */
 :root{
     --bg-color:#F1F1F1;
     --bg-color-content:#ffffff;
@@ -21,6 +23,7 @@ body{
     background: var(--bg-color);
 }
 
+/* grid */
 .wrap{
     min-height: 100vh;
     display: grid;
@@ -41,6 +44,8 @@ body{
 .nav{
     grid-area: nav;
 }
+
+/* style for settings */
 .set{
     grid-area: set;
     position: fixed;
@@ -55,27 +60,67 @@ body{
     border-radius: 0px 0px 0px 12px;
     box-shadow: 0px 0px 12px #b9d7f7;
     z-index: 55;
+    transition: 1s;
 }
 
-.set::before{
-    content: '';
+.set_close{
+    grid-area: set;
+    position: fixed;
+    right: -2px;
+    top: 100px;
+    height: 400px;
+    width: 0px;
+    background: #ffffff;
+    border-left: 0px solid #aac2da;
+    border-top: 1px solid #aac2da;
+    border-bottom: 5px solid #aac2da;
+    border-radius: 0px 0px 0px 12px;
+    box-shadow: 0px 0px 12px #b9d7f7;
+    z-index: 55;
+    transition: 1s;
+}
+
+.setting{
     position: absolute;
-    right: 220px;
+    right: 219px;
     top: -1px;
     height: 40px;
     width: 40px;
-    background: #aac2da;
+    color: #000000;
+    padding: 6px;
+    background: #4d6884;
     border: 1px solid #aac2da;
     border-radius: 9px 0px 0px 9px;
     box-shadow: -1px 0px 12px #b9d7f7;
+    text-shadow: 0px 0px 10px #ff2727;
     z-index: 5;
+    transition: 1s;
+}
+.setting_close{
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    height: 40px;
+    width: 40px;
+    color: #111111;
+    padding: 6px;
+    background: #4d6884;
+    border: 1px solid #aac2da;
+    border-radius: 9px 0px 0px 9px;
+    box-shadow: -1px 0px 12px #b9d7f7;
+    text-shadow: 0px 0px 10px #0bff00;
+    z-index: 5;
+    transition: 1s;
 }
 
 .out1{
     grid-area: out1;
+    min-width: 35px;
 }
 .out2{
     grid-area: out2;
+    min-width: 35px;
+
 }
 .side{
     grid-area: side;

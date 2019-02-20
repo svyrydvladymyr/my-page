@@ -3,18 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Link my stylesheet-->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" media="(min-width:768px) and (max-width:1250px)" href="./css/table.css">
     <link rel="stylesheet" type="text/css" media="(max-width:767px)" href="./css/mobil.css">
-    <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">    
+        <!--Link stylesheet for icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        <!--Link google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet"> 
     <title>My-Page</title>
 </head>
 <body>
     <div class="wrap">
         <div class="header">        
         </div>
-        <div class="set">        
+        <div class="set_close" id="set"> 
+            <div class="setting_close" id="setting" onclick="openSetting()">
+                <i class="fa fa-gear fa-spin" style="font-size:24px"></i>
+            </div>
+            <div class="set_blok" style="border:0px solid">
+                <div class="lang_en" id="lang_en" onclick='changLang("en");'>
+                    <img src="img/en.png" alt="EN">
+                    <p>ENGLISH</p>
+                </div>
+                <div  class="lang_ua" id="lang_ua" onclick='changLang("ua");'>
+                    <img src="img/ua.png" alt="UA">
+                    <p>УКРАЇНСЬКА</p>
+                </div>
+            </div>     
+            <div class="set_blok"></div> 
+            <div class="set_blok"></div> 
+            <div class="set_blok"></div> 
+            <div class="set_blok"></div>   
         </div>
         <div class="nav">        
         </div>
@@ -38,8 +59,8 @@
 
     <script src="./js/jsmain.js"></script>
     <script src="./js/cookie.js"></script>
+    <script src="./js/setting.js"></script>
     <script src="./js/ajax-param.js"></script>
     <script src="./js/jsinfo.js"></script>
-    <script src="./js/setting.js"></script>
 
 </body>

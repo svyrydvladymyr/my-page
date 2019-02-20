@@ -3,8 +3,9 @@
     min-width: 300px;
     display: grid;
     grid-template-columns:100%;
-    grid-template-rows: 70px auto 120px auto 150px 50px;   
+    grid-template-rows: 70px auto auto 120px auto 150px 50px;   
     grid-template-areas: 'header'
+                         'set'
                          'side'
                          'nav'
                          'article'
@@ -30,4 +31,49 @@
 
 .blok{
     margin-top: 10px;
+}
+
+.set{
+    position: relative;
+    width: calc(100% - 2%);
+    height: 400px;
+    padding: 10px;
+    margin: 5px;
+    top: 0px;
+    right: 0px;
+    border-radius: var(--border-radius-main);
+    border: var(--border-color-content);
+    box-shadow: var(--box-shadow-content);
+    background: var(--bg-color-content);
+}
+
+.set_close{
+    position: relative;
+    width: calc(100% - 2%);
+    height: 45px;
+    padding: 10px;
+    margin: 5px;
+    top: 0px;
+    right: 0px;
+    border-radius: var(--border-radius-main);
+    border: var(--border-color-content);
+    box-shadow: var(--box-shadow-content);
+    background: var(--bg-color-content);
+}
+
+.setting{
+    border-radius: 7px;
+    margin: 2.5px;
+    left: 0%;
+    right: 100%;    
+    transition: 1s;
+}
+
+.setting_close{
+    border-radius: 7px;
+    margin: 2.5px;
+    left: 100%;
+    right: 0%;
+    transform: translateX(-45px);
+    transition: 1s;
 }
