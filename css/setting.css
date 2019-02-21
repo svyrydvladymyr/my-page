@@ -3,9 +3,10 @@
     width: 90%;
     position: relative;
     min-height: 30px;
-    border-radius: 0px 7px 7px 7px;
+    border-radius: 0px 37px 7px 17px;
     border: 1px solid #cdcdcd;
     margin: 20px auto;
+    border-bottom: 2px solid #a1a1a1;
 }
 
 .set_blok_lang{
@@ -32,7 +33,7 @@
     width: 48%;
     height: 20px;
     border: 1px solid #a6a6a6;
-    border-radius: 7px;
+    border-radius: 5px 19px;
     background: #ededed;
     float: right;
     margin: 1%;
@@ -44,7 +45,7 @@
     height: 100%;
     margin: 0px;
     float: left;
-    border-radius: 7px; 
+    border-radius: 2px 12px;
 }
 
 .lang_en > p {
@@ -61,7 +62,7 @@
     width: 48%;
     height: 20px;
     border: 1px solid #a6a6a6;
-    border-radius: 7px;
+    border-radius: 19px 5px;
     background: #ededed;
     float: right;
     margin: 1%;
@@ -73,7 +74,7 @@
     height: 100%;
     margin: 0px;
     float: right;
-    border-radius: 7px; 
+    border-radius: 12px 2px; 
 }
 
 .lang_ua > p {
@@ -92,7 +93,7 @@
     left: -1px;
     color: #ffffff;
     font-size: 11px;
-    border-radius: 7px 7px 0px 0px;
+    border-radius: 9px 17px 0px 0px;
     margin: 0px;
     padding: 2px 10px;
     background: #505050;

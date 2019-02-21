@@ -93,11 +93,19 @@
         <div class="article">
         </div>
         <div class="blok">
+            <input type="text" name="name" id="dbname" placeholder="name">
+            <input type="text" name="email" id="dbemail" placeholder="email">
+            <button onclick="funChange()">change</button>
+            <p id="pp"></p>
+            <button onclick="funGet()">get</button>
         </div>
         <div class="footer">
         </div>
     </div>
 
+    
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+    <script src="./js/firebase.js"></script>
     <script src="./js/jsmain.js"></script>
     <script src="./js/cookie.js"></script>
     <script src="./js/setting.js"></script>
