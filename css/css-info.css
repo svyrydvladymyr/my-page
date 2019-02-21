@@ -41,6 +41,7 @@
     justify-content: start;
     margin-top: 10px;
     width: 100%;
+    height: 35px;
     padding: 2px 5px;
     border: 1px solid #d1d1d1;
     border-radius: 7px;
@@ -90,17 +91,6 @@
 }
 
 @media screen and (max-width:300px){
-    .info-name {
-        justify-content: center;
-        flex-direction: column;
-    }
-    .info-name i {
-        margin-left: 50%;
-        transform: translateX(-10%);
-    }
-    .info-name p {
-        font-size: 12px;
-        text-align: center;
-    }
+
 }
 

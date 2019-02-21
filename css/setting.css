@@ -1,13 +1,30 @@
 .set_blok{
+    cursor: pointer;
+    width: 90%;
+    position: relative;
+    min-height: 30px;
+    border-radius: 0px 7px 7px 7px;
+    border: 1px solid #cdcdcd;
+    margin: 20px auto;
+}
+
+.set_blok_lang{
+    cursor: pointer;
     width: 90%;
     min-height: 30px;
     border-radius: 7px;
-    border: 1px solid #cdcdcd;
+    border: 0px solid #cdcdcd;
     margin: 7px auto;
 }
 
 .set_blok:hover{
+    cursor: pointer;
     box-shadow: 0px 0px 2px #c2c2c2;
+}
+
+.set_blok_lang:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #c2c2c200;
 }
 
 .lang_en{
@@ -27,14 +44,14 @@
     height: 100%;
     margin: 0px;
     float: left;
-    border-radius: 5px; 
+    border-radius: 7px; 
 }
 
 .lang_en > p {
-    font-size: 8px;
+    font-size: 12px;
     font-weight: bold;
     font-family: 'ZCOOL KuaiLe', cursive;
-    margin: 4px auto;
+    margin: 2px auto;
     text-align: center;
     text-shadow: 0px 0px 1px #5daaff;
 }
@@ -56,14 +73,44 @@
     height: 100%;
     margin: 0px;
     float: right;
-    border-radius: 5px; 
+    border-radius: 7px; 
 }
 
 .lang_ua > p {
-    font-size: 8px;
+    font-size: 12px;
     font-weight: bold;
     font-family: 'ZCOOL KuaiLe', cursive;
-    margin: 3px auto;
+    margin: 1px auto;
     text-align: center;
     text-shadow: 0px 0px 1px #5daaff;
+}
+
+
+.set_blok p{
+    position: absolute;
+    top: -19px;
+    left: -1px;
+    color: #ffffff;
+    font-size: 11px;
+    border-radius: 7px 7px 0px 0px;
+    margin: 0px;
+    padding: 2px 10px;
+    background: #505050;
+    border: 1px solid #a0a0a0;
+}
+
+@media screen and (max-width:768px){
+    .set_blok_lang{
+        cursor: pointer;
+        width: 200px;
+        min-height: 30px;
+        border-radius: 7px;
+        border: 0px solid #cdcdcd;
+        margin: -1px auto 37px auto;
+    }
+   
+    .set_blok_lang:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 0px #c2c2c200;
+    }
 }

@@ -1,6 +1,6 @@
 .wrap{
     min-height: 100vh;
-    min-width: 300px;
+    min-width: 302px;
     display: grid;
     grid-template-columns:100%;
     grid-template-rows: 70px auto auto 120px auto 150px 50px;   
@@ -55,6 +55,7 @@
     margin: 5px;
     top: 0px;
     right: 0px;
+    overflow: hidden;
     border-radius: var(--border-radius-main);
     border: var(--border-color-content);
     box-shadow: var(--box-shadow-content);
@@ -62,6 +63,7 @@
 }
 
 .setting{
+    cursor: pointer;
     border-radius: 7px;
     margin: 2.5px;
     left: 0%;
@@ -70,6 +72,7 @@
 }
 
 .setting_close{
+    cursor: pointer;
     border-radius: 7px;
     margin: 2.5px;
     left: 100%;

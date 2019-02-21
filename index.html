@@ -22,7 +22,7 @@
             <div class="setting_close" id="setting" onclick="openSetting()">
                 <i class="fa fa-gear fa-spin" style="font-size:24px"></i>
             </div>
-            <div class="set_blok" style="border:0px solid">
+            <div class="set_blok_lang" style="border:0px solid" >
                 <div class="lang_en" id="lang_en" onclick='changLang("en");'>
                     <img src="img/en.png" alt="EN">
                     <p>ENGLISH</p>
@@ -32,8 +32,12 @@
                     <p>УКРАЇНСЬКА</p>
                 </div>
             </div>     
-            <div class="set_blok"></div> 
-            <div class="set_blok"></div> 
+            <div class="set_blok">
+                <p>BACKGROUND</p>
+            </div> 
+            <div class="set_blok">
+                <p>BACKGROUND</p>
+            </div> 
             <div class="set_blok"></div> 
             <div class="set_blok"></div>   
         </div>
@@ -43,6 +47,43 @@
         <div class="out2"></div>
         <div class="side">
             <div class="side_sub" id="sideinfo">
+                <div class="ava">
+                    <img  alt="my-foto" id="foto">
+                </div>
+                <div class="info">
+                    <div class="info-name">
+                        <p id="surname"></p>
+                        <p id="name"></p>
+                    </div>
+                    <div class="info-name">
+                        <i class="far fa-address-card"></i>
+                        <p id="contry"></p>
+                        <p id="town"></p>
+                    </div>
+                    <div class="info-name">
+                        <i class="fas fa-calendar-alt"></i>
+                        <p id="date"></p>
+                        <p id="mounth"></p>
+                        <p id="year"></p>
+                    </div>
+                    <div class="info-name">
+                        <i class="fas fa-at"></i>
+                        <p id="email"></p>
+                    </div>
+                    <div class="info-name">
+                        <i class="fas fa-phone-volume"></i>
+                        <p id="phone"></p>
+                    </div>
+                    <div class="info-name">
+                        <i class="fas fa-comment"></i>
+                        <p id="massage"></p>
+                    </div>
+                    <div class="info-name">
+                        <i class="fas fa-laptop"></i>
+                        <p id="job"></p>
+                        <p id="joblevel"></p>
+                    </div>
+                </div>
             </div>
             <div class="side_sub">  
             </div>
@@ -61,6 +102,5 @@
     <script src="./js/cookie.js"></script>
     <script src="./js/setting.js"></script>
     <script src="./js/ajax-param.js"></script>
-    <script src="./js/jsinfo.js"></script>
 
 </body>

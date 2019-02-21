@@ -60,6 +60,7 @@ var changLang = function(val){
     }
 })();
 
+
 // function for change background-color 
 var setBgColor = function(col) {
     var bgCol = "";

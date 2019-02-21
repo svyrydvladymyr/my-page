@@ -39,17 +39,6 @@ var createA = function(atr, val) {
     return elem;
 };
 
-var changLang = function(val){
-    var ua = document.getElementById("lang_ua");
-    var en = document.getElementById("lang_en");
-    if (val == "ua"){
-        en.style.width = 15 + "%";
-        ua.style.width = 81 + "%";
-    } else if (val == "en"){
-        ua.style.width = 15 + "%";
-        en.style.width = 81 + "%";
-    } 
-    return ua, en;   
-} 
+
 
 

@@ -81,6 +81,7 @@ body{
 }
 
 .setting{
+    cursor: pointer;
     position: absolute;
     right: 219px;
     top: -1px;
@@ -97,6 +98,7 @@ body{
     transition: 1s;
 }
 .setting_close{
+    cursor: pointer;
     position: absolute;
     right: -1px;
     top: -1px;
