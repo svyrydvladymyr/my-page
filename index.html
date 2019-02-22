@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
         <!--Link google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet"> 
-    <title>My-Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+
+        <title>My-Page</title>
 </head>
 <body>
     <div class="wrap">
@@ -57,14 +59,12 @@
                     </div>
                     <div class="info-name">
                         <i class="far fa-address-card"></i>
-                        <p id="contry"></p>
+                        <p id="country"></p>
                         <p id="town"></p>
                     </div>
                     <div class="info-name">
                         <i class="fas fa-calendar-alt"></i>
                         <p id="date"></p>
-                        <p id="mounth"></p>
-                        <p id="year"></p>
                     </div>
                     <div class="info-name">
                         <i class="fas fa-at"></i>
@@ -93,11 +93,22 @@
         <div class="article">
         </div>
         <div class="blok">
-            <input type="text" name="name" id="dbname" placeholder="name">
-            <input type="text" name="email" id="dbemail" placeholder="email">
-            <button onclick="funChange()">change</button>
-            <p id="pp"></p>
-            <button onclick="funGet()">get</button>
+            <fieldset id="form">
+                <legend>FORMA</legend>
+                <input type="text" name="name" id="fname" placeholder="name"><br>
+                <input type="text" name="surname" id="fsurname" placeholder="surname"><br>
+                <input type="email" name="email" id="femail" placeholder="email"><br>
+                <input type="tel" name="phone" id="fphone" placeholder="phone"><br>
+                <input type="text" name="country" id="fcountry" placeholder="country"><br>
+                <input type="text" name="town" id="ftown" placeholder="town"><br>
+                <input type="month" name="birthday" id="fbirthday"><br>
+                <input type="text" name="profesion" id="fprofesion" placeholder="profesion"><br>
+                <input type="text" name="profesionlevel" id="fprofesionlevel" placeholder="profesion level"><br>  
+                <button onclick="funChange()">change</button>
+                <p id="pp"></p>
+                <input type="text" name="takename" id="takedbname" placeholder="take a name">
+                <button onclick="funGet()">get</button>
+            </fieldset>
         </div>
         <div class="footer">
         </div>

@@ -1,3 +1,4 @@
+// function for open and close blok settings
 var openSetting = function(){
     var openGASet = document.getElementById("set");
     var openGASetting = document.getElementById("setting");
@@ -13,6 +14,7 @@ var openSetting = function(){
     }
 };
 
+// function for set language
 (function(){
     var val = getCookie("lang");
     var ua = document.getElementById("lang_ua");
@@ -27,6 +29,7 @@ var openSetting = function(){
     return ua, en;   
 })(); 
 
+// function for change language
 var changLang = function(val){
     var ua = document.getElementById("lang_ua");
     var en = document.getElementById("lang_en");

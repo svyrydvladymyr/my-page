@@ -2,7 +2,7 @@
     min-height: 100vh;
     display: grid;
     grid-template-columns:35px  300px auto auto 35px;
-    grid-template-rows: 70px 0px 120px auto 150px 50px;   
+    grid-template-rows: 70px 0px 120px auto auto 50px;   
     grid-gap: 1px; 
     grid-template-areas: 'out1 header header header out2'
                          'out1 side set set out2'

@@ -21,6 +21,8 @@ body{
     margin: 0px;
     min-width: 300px;
     background: var(--bg-color);
+    font-family: 'Caveat', cursive;
+    /* font-family: 'Marck Script', cursive; */
 }
 
 /* grid */
@@ -28,7 +30,7 @@ body{
     min-height: 100vh;
     display: grid;
     grid-template-columns: auto 300px 450px 450px auto;
-    grid-template-rows: 70px 0px 120px auto 150px 50px;   
+    grid-template-rows: 70px 0px 120px auto auto 50px;   
     grid-gap: 1px; 
     grid-template-areas: 'out1 header header header out2'
                          'out1 side set set out2'
