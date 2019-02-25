@@ -21,8 +21,9 @@ body{
     margin: 0px;
     min-width: 300px;
     background: var(--bg-color);
-    font-family: 'Caveat', cursive;
+    /* font-family: 'Caveat', cursive; */
     /* font-family: 'Marck Script', cursive; */
+    font-family: 'Anonymous Pro', monospace;
 }
 
 /* grid */
