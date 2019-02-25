@@ -23,7 +23,10 @@ body{
     background: var(--bg-color);
     /* font-family: 'Caveat', cursive; */
     /* font-family: 'Marck Script', cursive; */
-    font-family: 'Anonymous Pro', monospace;
+    font-family: 'PT Sans', sans-serif;
+    /* font-family: 'Lobster', cursive; */
+    /* font-family: 'Neucha', cursive; */
+    /* font-family: 'Bad Script', cursive; */
 }
 
 /* grid */
