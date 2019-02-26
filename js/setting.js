@@ -17,30 +17,30 @@ var openSetting = function(){
 // function for set language
 (function(){
     var val = getCookie("lang");
-    var ua = document.getElementById("lang_ua");
-    var en = document.getElementById("lang_en");
+    var ua = getID("lang_ua");
+    var en = getID("lang_en");
     if (val == "ua"){
-        en.style.width = 14 + "%";
-        ua.style.width = 82 + "%";
+        en.style.width = 13 + "%";
+        ua.style.width = 83 + "%";
     } else if (val == "en"){
-        ua.style.width = 14 + "%";
-        en.style.width = 82 + "%";
+        ua.style.width = 13 + "%";
+        en.style.width = 83 + "%";
     } 
     return ua, en;   
 })(); 
 
 // function for change language
 var changLang = function(val){
-    var ua = document.getElementById("lang_ua");
-    var en = document.getElementById("lang_en");
+    var ua = getID("lang_ua");
+    var en = getID("lang_en");
     if (val == "ua"){
-        en.style.width = 14 + "%";
-        ua.style.width = 82 + "%";
+        en.style.width = 13 + "%";
+        ua.style.width = 83 + "%";
         setCookie("lang", "ua");
         getJson("./json/configUA.json");
     } else if (val == "en"){
-        ua.style.width = 14 + "%";
-        en.style.width = 82 + "%";
+        ua.style.width = 13 + "%";
+        en.style.width = 83 + "%";
         setCookie("lang", "en");
         getJson("./json/configEN.json");
     } 

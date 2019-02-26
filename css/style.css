@@ -57,15 +57,13 @@ body{
     position: fixed;
     right: 0px;
     top: 100px;
-    height: 400px;
-    width: 220px;
+    width: 250px;
     background: #ffffff;
-    border-left: 1px solid #aac2da;
-    border-top: 1px solid #aac2da;
-    border-bottom: 5px solid #aac2da;
+    border-left: 1px solid #99aabc;
+    border-top: 1px solid #55728e;
+    border-bottom: 5px solid #526e8c;
     border-radius: 0px 0px 0px 12px;
-    box-shadow: 0px 0px 12px #b9d7f7;
-    z-index: 55;
+    box-shadow: 0px 0px 6px #697583;
     transition: 1s;
 }
 
@@ -74,31 +72,29 @@ body{
     position: fixed;
     right: -2px;
     top: 100px;
-    height: 400px;
     width: 0px;
     background: #ffffff;
-    border-left: 0px solid #aac2da;
-    border-top: 1px solid #aac2da;
-    border-bottom: 5px solid #aac2da;
+    border-left: 1px solid #99aabc;
+    border-top: 1px solid #55728e;
+    border-bottom: 5px solid #526e8c;
     border-radius: 0px 0px 0px 12px;
-    box-shadow: 0px 0px 12px #b9d7f7;
-    z-index: 55;
+    box-shadow: 0px 0px 6px #697583;
     transition: 1s;
 }
 
 .setting{
     cursor: pointer;
     position: absolute;
-    right: 219px;
+    right: 249px;
     top: -1px;
     height: 40px;
-    width: 40px;
+    width: 50px;
     color: #000000;
-    padding: 6px;
+    padding: 6px 14px;
     background: #4d6884;
-    border: 1px solid #aac2da;
-    border-radius: 9px 0px 0px 9px;
-    box-shadow: -1px 0px 12px #b9d7f7;
+    border: 1px solid #3f566d;
+    border-radius: 9px 0px 0px 29px;
+    box-shadow: -2px 0px 8px #697583;
     text-shadow: 0px 0px 10px #ff2727;
     z-index: 5;
     transition: 1s;
@@ -109,16 +105,29 @@ body{
     right: -1px;
     top: -1px;
     height: 40px;
-    width: 40px;
+    width: 50px;
     color: #111111;
-    padding: 6px;
+    padding: 6px 14px;
     background: #4d6884;
-    border: 1px solid #aac2da;
-    border-radius: 9px 0px 0px 9px;
-    box-shadow: -1px 0px 12px #b9d7f7;
+    border: 1px solid #3f566d;
+    border-radius: 9px 0px 0px 29px;
+    box-shadow: -2px 0px 8px #697583;
     text-shadow: 0px 0px 10px #0bff00;
     z-index: 5;
     transition: 1s;
+}
+
+.set_wrap{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+.set .set_wrap{
+    opacity: 1;
+    transition: opacity 2s;
 }
 
 .out1{

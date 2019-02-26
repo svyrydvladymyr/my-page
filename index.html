@@ -27,24 +27,33 @@
             <div class="setting_close" id="setting" onclick="openSetting()">
                 <i class="fa fa-gear fa-spin" style="font-size:24px"></i>
             </div>
-            <div class="set_blok_lang" style="border:0px solid" >
-                <div class="lang_en" id="lang_en" onclick='changLang("en");'>
-                    <img src="img/en.png" alt="EN">
-                    <p>ENGLISH</p>
-                </div>
-                <div  class="lang_ua" id="lang_ua" onclick='changLang("ua");'>
-                    <img src="img/ua.png" alt="UA">
-                    <p>УКРАЇНСЬКА</p>
-                </div>
-            </div>     
-            <div class="set_blok">
-                <p>BACKGROUND</p>
-            </div> 
-            <div class="set_blok">
-                <p>BORDER RADIUS</p>
-            </div> 
-            <div class="set_blok"></div> 
-            <div class="set_blok"></div>   
+            <div class="set_wrap" id="set-wrap">
+                <div class="set_blok_lang" style="border:0px solid" >
+                    <div class="lang_en" id="lang_en" onclick='changLang("en");'>
+                        <img src="img/en.png" alt="EN">
+                        <p>ENGLISH</p>
+                    </div>
+                    <div  class="lang_ua" id="lang_ua" onclick='changLang("ua");'>
+                        <img src="img/ua.png" alt="UA">
+                        <p>УКРАЇНСЬКА</p>
+                    </div>
+                </div>     
+                <div class="set_blok">
+                    <p>BACKGROUND</p>
+                </div> 
+                <div class="set_blok">
+                    <p>BORDER RADIUS</p>
+                </div> 
+                <div class="set_blok">
+                    <p>FONT-FAMILY</p>
+                </div> 
+                <div class="set_blok">
+                    <p>BORDER-IMG</p>
+                </div>   
+                <div class="set_blok">
+                    <p>BORDER RADIUS</p>
+                </div> 
+            </div>    
         </div>
         <div class="nav">        
         </div>
@@ -129,10 +138,9 @@
         </div>
     </div>
 
-    
+    <script src="./js/jsmain.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
     <script src="./js/firebase.js"></script>
-    <script src="./js/jsmain.js"></script>
     <script src="./js/cookie.js"></script>
     <script src="./js/setting.js"></script>
     <script src="./js/ajax-param.js"></script>
