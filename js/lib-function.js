@@ -10,6 +10,12 @@ var getCL = function(val) {
     return getclass;
 };
 
+// function for get query selector
+var getQS = function(val) {
+    var getquerySelector = document.querySelector(val);
+    return getquerySelector;
+};
+
 // function for get tag name
 var getTAG = function(val) {
     var getclass = document.getElementsByTagName(val);
