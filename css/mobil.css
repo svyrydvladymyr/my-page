@@ -35,8 +35,7 @@
 
 .set{
     position: relative;
-    width: calc(100% - 2%);
-    height: 400px;
+    width: 97%;
     padding: 10px;
     margin: 5px;
     top: 0px;
@@ -49,8 +48,8 @@
 
 .set_close{
     position: relative;
-    width: calc(100% - 2%);
-    height: 45px;
+    width: 97%;
+    height: 41px;
     padding: 10px;
     margin: 5px;
     top: 0px;
@@ -62,21 +61,16 @@
     background: var(--bg-color-content);
 }
 
-.setting{
-    cursor: pointer;
-    border-radius: 7px;
-    margin: 2.5px;
-    left: 0%;
-    right: 100%;    
-    transition: 1s;
+@media screen and (min-width:500px) and (max-width:766px){
+    .set{width: 98%}
+    .set_close{width: 98%}
 }
 
-.setting_close{
-    cursor: pointer;
-    border-radius: 7px;
-    margin: 2.5px;
-    left: 100%;
-    right: 0%;
-    transform: translateX(-45px);
-    transition: 1s;
+@media screen and (min-width:400px) and (max-width:499px){
+    .set{width: 97.5%}
+    .set_close{width: 97.5%}    
 }
+
+
+
+

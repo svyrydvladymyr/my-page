@@ -7,8 +7,7 @@
     --bg-color-content:#ffffff;
     --border-color-content:1px solid #ffffff;
     --border-color-content-hover:1px solid #8bc3e9;
-    --box-shadow-content:0px 0px 8px #6eb4ff;
-    --box-shadow-content-hover:0px 0px 9px #6eb4ff;
+    --box-shadow-content:0px 0px 5px #6eb4ff;
     --border-radius-main:9px;
 }
 
@@ -63,7 +62,7 @@ body{
     border-top: 1px solid #55728e;
     border-bottom: 5px solid #526e8c;
     border-radius: 0px 0px 0px 12px;
-    box-shadow: 0px 0px 6px #697583;
+    box-shadow: 0px 0px 2px #697583;
     transition: 1s;
 }
 
@@ -78,42 +77,7 @@ body{
     border-top: 1px solid #55728e;
     border-bottom: 5px solid #526e8c;
     border-radius: 0px 0px 0px 12px;
-    box-shadow: 0px 0px 6px #697583;
-    transition: 1s;
-}
-
-.setting{
-    cursor: pointer;
-    position: absolute;
-    right: 249px;
-    top: -1px;
-    height: 40px;
-    width: 50px;
-    color: #000000;
-    padding: 6px 14px;
-    background: #4d6884;
-    border: 1px solid #3f566d;
-    border-radius: 9px 0px 0px 29px;
-    box-shadow: -2px 0px 8px #697583;
-    text-shadow: 0px 0px 10px #ff2727;
-    z-index: 5;
-    transition: 1s;
-}
-.setting_close{
-    cursor: pointer;
-    position: absolute;
-    right: -1px;
-    top: -1px;
-    height: 40px;
-    width: 50px;
-    color: #111111;
-    padding: 6px 14px;
-    background: #4d6884;
-    border: 1px solid #3f566d;
-    border-radius: 9px 0px 0px 29px;
-    box-shadow: -2px 0px 8px #697583;
-    text-shadow: 0px 0px 10px #0bff00;
-    z-index: 5;
+    box-shadow: 0px 0px 0px #697583;
     transition: 1s;
 }
 
@@ -137,7 +101,6 @@ body{
 .out2{
     grid-area: out2;
     min-width: 35px;
-
 }
 .side{
     grid-area: side;
@@ -179,7 +142,3 @@ body{
     background: var(--bg-color-content);
 }
 
-.header:hover, .nav:hover, .article:hover, .side_sub:hover{
-    border:var(--border-color-content-hover);
-    box-shadow:var(--box-shadow-content-hover) ;
-}
